@@ -7,8 +7,7 @@ from datetime import datetime
 
 data = []
 
-consumer = KafkaConsumer(
-    #'Payam2Topic',
+consumer = KafkaConsumer(    
      'ChallengeTopic',
      bootstrap_servers=['localhost:9092'],
      auto_offset_reset='earliest',
